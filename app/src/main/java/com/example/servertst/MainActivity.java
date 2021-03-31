@@ -35,7 +35,7 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    CardView c1, c2, c3, c4,c5,c6;
+    CardView c1, c2, c3, c4,c5,c6,c7;
     Report_Receiver broadcast = new Report_Receiver(this);
 
     @Override
@@ -49,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
         c4 = findViewById(R.id.mieral_estimate);
         c5 = findViewById(R.id.procedure_exp);
         c6 = findViewById(R.id.about_us);
+        c7 = findViewById(R.id.measure_sensor_data);
+        c7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, Measurement.class);
+                startActivity(i);
+            }
+        });
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

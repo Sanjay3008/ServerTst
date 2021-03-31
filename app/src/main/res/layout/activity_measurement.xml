@@ -1,9 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".Measurement">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/top_back_main">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Measurement"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="150dp"
+            android:id="@+id/refresh_data"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:text="Refresh"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:backgroundTint="#009688"
+            android:layout_height="60dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:id="@+id/measure_data"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:text="Measure"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:backgroundTint="#D84315"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/moisture"
+        android:layout_gravity="center"
+        android:layout_height="100dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Moisture Voltage"
+        android:fontFamily="@font/montserrat"
+        android:textSize="25sp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textColor="#7B1FA2"
+        android:textAllCaps="true"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/moisture_v"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:textColor="#000"
+        android:fontFamily="@font/montserrat"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ifrared"
+        android:layout_gravity="center"
+        android:layout_height="100dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Infrared Voltage"
+        android:fontFamily="@font/montserrat"
+        android:textSize="25sp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textColor="#7B1FA2"
+        android:textAllCaps="true"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/ifrared_v"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:textColor="#000"
+        android:fontFamily="@font/montserrat"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

@@ -45,7 +45,7 @@
             android:useDefaultMargins="true">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/minerl_predict"
+                android:id="@+id/measure_sensor_data"
                 android:layout_width="140dp"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
@@ -67,7 +67,7 @@
                     android:layout_marginBottom="10dp"
                     android:fontFamily="@font/montserrat"
                     android:gravity="center"
-                    android:text="@string/mineral_predict"
+                    android:text="Sensor Reading"
                     android:textAllCaps="true"
                     android:textColor="#000" />
             </androidx.cardview.widget.CardView>
@@ -213,6 +213,34 @@
 
 
         </GridLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/minerl_predict"
+            android:layout_gravity="center"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#E2E2DE"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/mineral_predict" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="125dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="@string/mineral_predict"
+                android:textAllCaps="true"
+                android:textColor="#000" />
+        </androidx.cardview.widget.CardView>
 
 
 
