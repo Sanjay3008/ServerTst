@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/linear_estimate"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".reflect_air_predict">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/top_back_main">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Mineral Estimate"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter the reflected voltage"
+        android:textColorHint="#707072">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reflected_voltage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter the Infrared Voltage"
+        android:textColorHint="#707072">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/infrared_voltage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter the Moisture Voltage"
+        android:textColorHint="#707072">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/moisture_voltage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/estimate_p"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="#CE7F43"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/predict"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/estimate_r"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="#6F2E5E"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/refresh"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/processing_estimate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/progress_text_estimate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="@string/please_wait_processing"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sodium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#85E7A1DE"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:hint="@string/enter_data_to_load"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/calcium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="#85C997EC"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:hint="@string/enter_data_to_load"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/MAG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="#8589F3DE"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:hint="@string/enter_data_to_load"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_splash"
+    android:background="#C8E97047"
+    android:orientation="vertical"
+    tools:context=".splash">
+
+    <ImageView
+        android:id="@+id/mineral_logo"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#0773AC"
+        android:src="@drawable/ic_mineral_svgrepo_com" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/mineral_predictor"
+        android:textAlignment="center"
+        android:textColor="#850C0C"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:columnOrderPreserved="true"
+        android:rowCount="2"
+        >
+
+        <ImageView
+            android:id="@+id/silicon"
+            android:layout_width="175dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:src="@drawable/silicon" />
+        <ImageView
+            android:id="@+id/chlorine"
+            android:layout_width="175dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:src="@drawable/chlorine"></ImageView>
+
+        <ImageView
+            android:id="@+id/magnesium"
+            android:layout_width="175dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:src="@drawable/magnesium" />
+
+        <ImageView
+            android:id="@+id/zinc"
+            android:layout_width="175dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:src="@drawable/zinc" />
+
+    </GridLayout>
+
+</LinearLayout>

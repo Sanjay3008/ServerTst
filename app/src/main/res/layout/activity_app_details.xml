@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app_details">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/top_back_main">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="About App"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/studio"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000"
+            android:text="This app was developed using Android Studio and JAVA JDK"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#275E61"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="150dp"
+                android:src="@drawable/python"
+                android:layout_margin="15dp"
+                android:layout_height="150dp"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:src="@drawable/git"
+                android:layout_margin="15dp"
+                android:layout_height="150dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="350dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000"
+            android:text="The server part is integrated using python and deployed in heroku platform connected through github"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#275E61"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/firease"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000"
+            android:text="The samples collected can be uploaded to firebase along with their data in 'Upload Sample Section' and are displayed in 'Samples Collected Section' in this app"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#275E61"
+            android:layout_marginTop="20dp" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/process_app"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000"
+            android:text="To know the process and procedure of mineral estimation please refer to 'Procedure Section'"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#275E61"
+            android:layout_marginTop="20dp" />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/estimate"/>
+        <TextView
+            android:layout_width="350dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000"
+            android:text="To perform mineral estimation please visit 'Estimate Section'"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

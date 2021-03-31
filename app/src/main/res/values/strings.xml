@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Mineral Predictor</string>
+    <string name="mineral_predictor">Mineral Predictor</string>
+    <string name="mineral_predict">Mineral Predict</string>
+    <string name="upload_sample">Upload Sample</string>
+    <string name="samples_collected">Samples Collected</string>
+    <string name="procedure">Procedure</string>
+    <string name="about_app">About App</string>
+    <string name="name">Name</string>
+    <string name="sample_location">Sample Location :</string>
+    <string name="acoustic_impedance">Acoustic Impedance:</string>
+    <string name="mineral_predicted">Mineral Predicted:</string>
+    <string name="predict_using_acoustic_impedance">Predict Using Acoustic Impedance</string>
+    <string name="enter_the_moisture">Enter the Moisture Voltage</string>
+    <string name="enter_the_reflected_voltage">Enter the Reflected voltage (mV)</string>
+    <string name="enter_the_acoustic_impedance">Enter the Acoustic Impedance</string>
+    <string name="enter_the_ifrared">Enter the Infrared Voltage</string>
+    <string name="predict">Predict</string>
+    <string name="refresh">Refresh</string>
+    <string name="please_wait_processing">Please wait Processing...</string>
+    <string name="enter_data_to_load">Enter data to Load...</string>
+    <string name="upload_data_to_database">Upload Data to Database</string>
+    <string name="capture_photo">Capture Photo</string>
+    <string name="upload">Upload</string>
+    <string name="enter_the_mineral_name">Enter the Mineral Name</string>
+    <string name="enter_the_acoustic_impedance_value">Enter the Acoustic Impedance Value</string>
+    <string name="enter_the_sample_location">Enter the Sample Location</string>
+    <string name="enter_the_sample_name">Enter the Sample Name</string>
+    <string name="connect">Connect</string>
+</resources>

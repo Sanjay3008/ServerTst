@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "991012160876",
+    "project_id": "mineral-predictor",
+    "storage_bucket": "mineral-predictor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991012160876:android:80cd9e1770f99e4a09df49",
+        "android_client_info": {
+          "package_name": "com.example.servertst"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991012160876-18bcjo0fg73po8mpvlcud7ktpn0i12kk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.servertst",
+            "certificate_hash": "04971f1674b257549a0e3dd19eaea1252bf2ceb1"
+          }
+        },
+        {
+          "client_id": "991012160876-70jb48v6tb8igtbb9odolk2rv8jtklrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf4yDAXu1n5jXExV5ZHy27GkHP0sqrxMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991012160876-70jb48v6tb8igtbb9odolk2rv8jtklrl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

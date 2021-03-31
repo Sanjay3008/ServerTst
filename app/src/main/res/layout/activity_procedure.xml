@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Procedure">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/top_back_main">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Procedure"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_gravity="center"
+        android:src="@drawable/diagram_process"
+        android:layout_height="300dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:fontFamily="@font/montserrat"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:textColor="#000"
+        android:text="The collected samples are subjected to IR sensor, Ultrasonic Sensor and Moisture Sensor. The ultrasound reflected voltage, infrared voltage and  moisture voltage are given as input to the ML Algorithm and estimation of sodium, magnesium and calcium are found out. The samples are stored in Firebase database. The predicted result is shown in this application under Mineral estimate section"
+        android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="ML Algorithm"
+            android:fontFamily="@font/montserrat"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:textColor="#E23A3A"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/algorithm"
+
+            android:layout_height="300dp"/>
+    </LinearLayout>
+
+
+</ScrollView>

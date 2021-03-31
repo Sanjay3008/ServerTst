@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".minera_predict_ways">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#D88D3076"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Choose the method"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:textColor="#fff"
+            android:textAllCaps="true"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="130dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:text="Acoustic Impedance"
+            android:stateListAnimator="@null"
+            android:id="@+id/acoustic_impedance_method"
+            android:padding="10dp"
+            android:fontFamily="@font/montserrat"
+            android:backgroundTint="#C9DF58"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:text="Reflection Coefficient/ Water is the medium"
+            android:id="@+id/reflection_coeff_water_method"
+            android:padding="10dp"
+            android:stateListAnimator="@null"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:backgroundTint="#2FD6D0"
+            android:fontFamily="@font/montserrat"
+            android:layout_margin="20dp"
+            android:layout_height="70dp"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:text="Reflection Coefficient/ Air is the medium"
+            android:id="@+id/reflection_coeff_air_method"
+            android:stateListAnimator="@null"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:fontFamily="@font/montserrat"
+            android:backgroundTint="#F57C00"
+            android:layout_margin="20dp"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
