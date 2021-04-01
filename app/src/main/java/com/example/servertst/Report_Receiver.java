@@ -14,6 +14,7 @@ public class Report_Receiver extends BroadcastReceiver {
     reflect_air_predict reflect_air_predict_;
     reflect_predict_water reflect_predict_water_;
     estimate estimate_;
+    Measurement measurement_;
 
 
     private Activity calledactivity;
@@ -47,6 +48,10 @@ public class Report_Receiver extends BroadcastReceiver {
         this.calledactivity=callingactivity2;
         estimate_=callingactivity2;
     }
+    public Report_Receiver(Measurement callingactivity2){
+        this.calledactivity=callingactivity2;
+        measurement_=callingactivity2;
+    }
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -78,6 +83,10 @@ public class Report_Receiver extends BroadcastReceiver {
                 {
                     estimate_.alert(true);
                 }
+                else if(this.calledactivity instanceof Measurement)
+                {
+                    measurement_.alert(true);
+                }
             }
             else{
                 if(this.calledactivity instanceof upload_activity){
@@ -104,6 +113,10 @@ public class Report_Receiver extends BroadcastReceiver {
                 else if(this.calledactivity instanceof estimate)
                 {
                     estimate_.alert(false);
+                }
+                else if(this.calledactivity instanceof Measurement)
+                {
+                    measurement_.alert(false);
                 }
             }
         }

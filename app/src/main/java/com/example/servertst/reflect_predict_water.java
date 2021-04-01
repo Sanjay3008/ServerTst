@@ -113,7 +113,7 @@ public class reflect_predict_water extends AppCompatActivity {
     boolean first =false;
     public  void alert(boolean noconnectivity){
         if(noconnectivity){
-            LinearLayout dl = findViewById(R.id.linear_mineral);
+            LinearLayout dl = findViewById(R.id.linear_mineral_water);
             snackbar= Snackbar
                     .make(dl,"Check Your Internet....",Snackbar.LENGTH_LONG);
             snackbar.setAnimationMode(BaseTransientBottomBar.ANIMATION_MODE_FADE);
