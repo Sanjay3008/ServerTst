@@ -14,16 +14,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Measurement"></activity>
-        <activity android:name=".app_details" />
-        <activity android:name=".Procedure" />
-        <activity android:name=".estimate" />
-        <activity android:name=".reflect_predict_water" />
-        <activity android:name=".reflect_air_predict" />
-        <activity android:name=".minera_predict_ways" />
+        <activity android:name=".Measurement"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".app_details"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Procedure"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".estimate"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".reflect_predict_water"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".reflect_air_predict"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".minera_predict_ways"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".database_collection"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".upload_activity"
             android:screenOrientation="portrait" />
